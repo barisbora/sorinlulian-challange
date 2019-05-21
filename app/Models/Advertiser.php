@@ -20,4 +20,12 @@ class Advertiser extends Model
     {
         return $this->hasMany( Campaign::class, 'advertiser_id', 'id' );
     }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function ads()
+    {
+        return $this->hasMany( Advertisement::class, 'advertiser_id', 'id' );
+    }
 }

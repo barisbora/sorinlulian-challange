@@ -4,14 +4,19 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Campaign extends Model
+class Advertisement extends Model
 {
 
     protected $table = 'campaigns';
 
     protected $fillable = [
         'advertiser_id',
-        'name',
+        'campaign_id',
+        'title',
+        'text',
+        'image',
+        'sponsored_by',
+        'tracking_url',
     ];
 
     /**
@@ -23,10 +28,11 @@ class Campaign extends Model
     }
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function ads()
+    public function campaign()
     {
-        return $this->hasMany( Advertisement::class, 'campaign_id', 'id' );
+        return $this->belongsTo( Campaign::class, 'campaign_id', 'id' );
     }
+
 }
