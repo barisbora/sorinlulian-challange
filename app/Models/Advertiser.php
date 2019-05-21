@@ -13,4 +13,11 @@ class Advertiser extends Model
         'name',
     ];
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function campaigns()
+    {
+        return $this->hasMany( Campaign::class, 'advertiser_id', 'id' );
+    }
 }
