@@ -14,4 +14,4 @@ INSTALL
 
 **6)** _`/what-is-my-device`_ detect user device
 
-![What Is My Device](https://bitbucket.org/barisbora/sorinlulian-challange/raw/24897962bad8eab95c5e847c179245adf2ec2748/public/screencapture.png)
+![What Is My Device](https://raw.githubusercontent.com/barisbora/sorinlulian-challange/master/public/screencapture.png)
