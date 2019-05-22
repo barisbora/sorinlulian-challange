@@ -12,4 +12,4 @@ INSTALL
 
 **5)** _`Sorin Lulian Challange.postman_collection.json`_ file contains all endpoints. easy to import postman or [online documentation](https://documenter.getpostman.com/view/525336/S1TN82Ng) can be use
 
-**6)** _`/what-is-device`_ detect user device
+**6)** _`/what-is-my-device`_ detect user device

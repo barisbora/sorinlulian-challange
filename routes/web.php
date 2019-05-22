@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->to( 'what-is-my-device');
+});
+
+Route::get('what-is-my-device', function () {
+    return view('what-is-my-device');
 });
