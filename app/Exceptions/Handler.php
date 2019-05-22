@@ -2,8 +2,10 @@
 
 namespace App\Exceptions;
 
+use App\Helpers\API;
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Validation\ValidationException;
 
 class Handler extends ExceptionHandler
 {
@@ -46,6 +48,17 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+
+        if ( $exception instanceof ValidationException ) {
+
+            $errors = collect($exception->validator->errors()->toArray())->transform(function($item) {
+                return $item[0];
+            })->toArray();
+
+            return API::error( $errors, 'Validation Errors', 422 );
+
+        }
+
         return parent::render($request, $exception);
     }
 }

@@ -19,9 +19,9 @@ use Faker\Generator as Faker;
 
 $factory->define( Advertisement::class, function ( Faker $faker ) {
     return [
-        'title'        => $faker->title,
+        'title'        => $faker->sentence,
         'text'         => $faker->text,
-        'image'        => $faker->imageUrl( 640, 480, 'cats', true, $faker->bothify('Sorin Lulian ######') ),
+        'image'        => $faker->imageUrl( 640, 480, 'cats', true, $faker->bothify( 'Sorin Lulian ######' ) ),
         'sponsored_by' => $faker->name,
         'tracking_url' => $faker->url,
     ];

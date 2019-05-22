@@ -1,0 +1,599 @@
+{
+	"info": {
+		"_postman_id": "46652233-e1d0-4d33-803c-8dc0e498b720",
+		"name": "Sorin Lulian Challange",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Advertisement",
+			"item": [
+				{
+					"name": "advertisement",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/advertisement?with=advertiser,campaign&campaign_id=1&advertiser_id=1",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"advertisement"
+							],
+							"query": [
+								{
+									"key": "with",
+									"value": "advertiser,campaign",
+									"description": "Load relation with conditionally. Each relation separeted with comma "
+								},
+								{
+									"key": "campaign_id",
+									"value": "1",
+									"description": "Filter by given campaign id"
+								},
+								{
+									"key": "advertiser_id",
+									"value": "1",
+									"description": "Filter by given advertiser id"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "index",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{HOST}}/advertisement",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"advertisement"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.7"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2019 01:04:39 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"code\": 200,\n    \"message\": null,\n    \"data\": [\n        {\n            \"id\": 512,\n            \"title\": \"Mr.\",\n            \"text\": \"Quibusdam veritatis rerum veritatis doloribus. Modi et asperiores impedit id nobis. Facilis dolorem modi eum totam voluptas ut.\",\n            \"image\": \"https://lorempixel.com/640/480/cats/Sorin Lulian 655609/?46093\",\n            \"sponsored_by\": \"Mr. Cordell Goldner II\",\n            \"tracking_url\": \"http://yundt.com/facere-doloribus-dolorem-praesentium-voluptate.html\",\n            \"created_at\": \"2019-05-22T00:07:55.000000Z\",\n            \"updated_at\": \"2019-05-22T00:07:55.000000Z\"\n        },\n        {\n            \"id\": 513,\n            \"title\": \"Prof.\",\n            \"text\": \"Provident est consequatur aspernatur sint aliquid. Qui enim quos et debitis quia nisi commodi adipisci. Eum illo dolore officia necessitatibus aut iste. Itaque in nihil pariatur facilis.\",\n            \"image\": \"https://lorempixel.com/640/480/cats/Sorin Lulian 785730/?14039\",\n            \"sponsored_by\": \"Jody Muller Sr.\",\n            \"tracking_url\": \"https://www.stanton.org/quidem-qui-ut-inventore-quaerat-quaerat-rerum-saepe-incidunt\",\n            \"created_at\": \"2019-05-22T00:07:55.000000Z\",\n            \"updated_at\": \"2019-05-22T00:07:55.000000Z\"\n        },\n        {\n            \"id\": 514,\n            \"title\": \"Ms.\",\n            \"text\": \"Quas et ut est enim asperiores tenetur non. Ipsa nihil ut debitis vero delectus quos. Harum aperiam adipisci rerum et quis ducimus doloribus eveniet.\",\n            \"image\": \"https://lorempixel.com/640/480/cats/Sorin Lulian 808384/?37477\",\n            \"sponsored_by\": \"Kip Bednar PhD\",\n            \"tracking_url\": \"http://conn.com/vel-tempore-aut-earum-repudiandae-ut.html\",\n            \"created_at\": \"2019-05-22T00:07:55.000000Z\",\n            \"updated_at\": \"2019-05-22T00:07:55.000000Z\"\n        },\n        {\n            \"id\": 515,\n            \"title\": \"Mr.\",\n            \"text\": \"Repudiandae quam in quibusdam molestias eveniet. Ea commodi minus dignissimos adipisci quos. Error non soluta repellat tempora.\",\n            \"image\": \"https://lorempixel.com/640/480/cats/Sorin Lulian 168536/?65185\",\n            \"sponsored_by\": \"Monroe Jacobs DVM\",\n            \"tracking_url\": \"http://keeling.biz/\",\n            \"created_at\": \"2019-05-22T00:07:55.000000Z\",\n            \"updated_at\": \"2019-05-22T00:07:55.000000Z\"\n        },\n        {\n            \"id\": 516,\n            \"title\": \"Prof.\",\n            \"text\": \"Ducimus porro nisi ut sunt corporis est. Ut pariatur repellendus distinctio accusamus dolorum magni dolorum. Minima velit beatae cupiditate at laborum est tempora.\",\n            \"image\": \"https://lorempixel.com/640/480/cats/Sorin Lulian 683881/?91834\",\n            \"sponsored_by\": \"Dashawn Nitzsche IV\",\n            \"tracking_url\": \"http://spencer.com/odit-sapiente-neque-qui-est-pariatur\",\n            \"created_at\": \"2019-05-22T00:07:55.000000Z\",\n            \"updated_at\": \"2019-05-22T00:07:55.000000Z\"\n        },\n        {\n            \"id\": 517,\n            \"title\": \"Dr.\",\n            \"text\": \"Quia accusamus vel ut. Porro quisquam eos ullam velit saepe excepturi.\",\n            \"image\": \"https://lorempixel.com/640/480/cats/Sorin Lulian 193891/?87914\",\n            \"sponsored_by\": \"Deshawn Kirlin\",\n            \"tracking_url\": \"http://www.sporer.com/facere-necessitatibus-possimus-non-consequatur-facilis-nihil-voluptas-asperiores.html\",\n            \"created_at\": \"2019-05-22T00:07:55.000000Z\",\n            \"updated_at\": \"2019-05-22T00:07:55.000000Z\"\n        },\n        {\n            \"id\": 518,\n            \"title\": \"Prof.\",\n            \"text\": \"Voluptate voluptas illo dolor vero. Voluptatem recusandae in quibusdam magnam voluptas blanditiis laborum. Et illo tempora nam et beatae quis. In sint similique pariatur eaque et.\",\n            \"image\": \"https://lorempixel.com/640/480/cats/Sorin Lulian 186649/?38549\",\n            \"sponsored_by\": \"Sammy Ferry PhD\",\n            \"tracking_url\": \"http://cruickshank.com/suscipit-placeat-dolores-placeat-et.html\",\n            \"created_at\": \"2019-05-22T00:07:55.000000Z\",\n            \"updated_at\": \"2019-05-22T00:07:55.000000Z\"\n        },\n        {\n            \"id\": 519,\n            \"title\": \"Prof.\",\n            \"text\": \"In voluptatum nesciunt ut praesentium. Ipsam corrupti aut non id. Quo eos eligendi aliquam vel voluptates voluptatum placeat. Cumque voluptates ipsa nisi aut accusantium deserunt similique.\",\n            \"image\": \"https://lorempixel.com/640/480/cats/Sorin Lulian 790054/?55575\",\n            \"sponsored_by\": \"Kory Muller\",\n            \"tracking_url\": \"http://www.reilly.net/qui-ab-expedita-fugiat-dolorum-dolores\",\n            \"created_at\": \"2019-05-22T00:07:55.000000Z\",\n            \"updated_at\": \"2019-05-22T00:07:55.000000Z\"\n        },\n        {\n            \"id\": 520,\n            \"title\": \"Dr.\",\n            \"text\": \"Illum alias fugit excepturi. Hic incidunt autem aspernatur saepe. Ut ipsam tenetur error id officiis repellendus magnam.\",\n            \"image\": \"https://lorempixel.com/640/480/cats/Sorin Lulian 569478/?65100\",\n            \"sponsored_by\": \"Mr. Ford Krajcik\",\n            \"tracking_url\": \"http://www.jast.org/quis-a-ab-rerum-tenetur-distinctio-magni\",\n            \"created_at\": \"2019-05-22T00:07:55.000000Z\",\n            \"updated_at\": \"2019-05-22T00:07:55.000000Z\"\n        },\n        {\n            \"id\": 521,\n            \"title\": \"Prof.\",\n            \"text\": \"Suscipit facilis voluptatibus et dolores omnis commodi molestias. Aut laboriosam repellendus et cumque quos omnis. Deleniti mollitia voluptatem quia sit vero sed.\",\n            \"image\": \"https://lorempixel.com/640/480/cats/Sorin Lulian 100668/?12322\",\n            \"sponsored_by\": \"Mr. Arnoldo Schuppe\",\n            \"tracking_url\": \"http://hickle.com/aspernatur-natus-ad-consectetur-rerum-ipsa-perferendis.html\",\n            \"created_at\": \"2019-05-22T00:07:55.000000Z\",\n            \"updated_at\": \"2019-05-22T00:07:55.000000Z\"\n        },\n        {\n            \"id\": 522,\n            \"title\": \"Miss\",\n            \"text\": \"Qui aut facilis expedita inventore debitis voluptas. Aut aliquid enim fuga hic. Blanditiis a deserunt incidunt est.\",\n            \"image\": \"https://lorempixel.com/640/480/cats/Sorin Lulian 089591/?99810\",\n            \"sponsored_by\": \"Cruz O'Conner\",\n            \"tracking_url\": \"http://www.kub.biz/illo-sit-non-cupiditate-molestiae-adipisci\",\n            \"created_at\": \"2019-05-22T00:07:55.000000Z\",\n            \"updated_at\": \"2019-05-22T00:07:55.000000Z\"\n        },\n        {\n            \"id\": 523,\n            \"title\": \"Dr.\",\n            \"text\": \"Dignissimos explicabo beatae impedit dicta quibusdam est. Deleniti praesentium et adipisci et corrupti similique error corrupti. Iure quae repellendus qui vitae illo. Itaque molestiae enim dolores.\",\n            \"image\": \"https://lorempixel.com/640/480/cats/Sorin Lulian 106739/?97125\",\n            \"sponsored_by\": \"Blanca Ondricka\",\n            \"tracking_url\": \"http://www.mohr.com/\",\n            \"created_at\": \"2019-05-22T00:07:55.000000Z\",\n            \"updated_at\": \"2019-05-22T00:07:55.000000Z\"\n        },\n        {\n            \"id\": 524,\n            \"title\": \"Miss\",\n            \"text\": \"Inventore ea repellendus alias rerum. Eos sint sint accusamus deleniti dolorum libero. Quia adipisci voluptatem quis consequatur eos tenetur.\",\n            \"image\": \"https://lorempixel.com/640/480/cats/Sorin Lulian 045403/?35775\",\n            \"sponsored_by\": \"Clarabelle Mosciski I\",\n            \"tracking_url\": \"http://www.rutherford.com/\",\n            \"created_at\": \"2019-05-22T00:07:55.000000Z\",\n            \"updated_at\": \"2019-05-22T00:07:55.000000Z\"\n        },\n        {\n            \"id\": 525,\n            \"title\": \"Mrs.\",\n            \"text\": \"Commodi accusamus molestiae dolorum rem qui repellat. Sint sunt rerum eveniet. Et quia ipsam inventore corporis.\",\n            \"image\": \"https://lorempixel.com/640/480/cats/Sorin Lulian 994050/?75015\",\n            \"sponsored_by\": \"Dr. Mariam Parisian\",\n            \"tracking_url\": \"http://stehr.com/eum-ut-exercitationem-tempora-expedita-cupiditate-qui-molestias\",\n            \"created_at\": \"2019-05-22T00:07:55.000000Z\",\n            \"updated_at\": \"2019-05-22T00:07:55.000000Z\"\n        },\n        {\n            \"id\": 526,\n            \"title\": \"Prof.\",\n            \"text\": \"Sunt non dolorum ex modi. Quia ut quo quaerat dolore maxime quibusdam id exercitationem. Tenetur eum officia qui illum at eveniet eum.\",\n            \"image\": \"https://lorempixel.com/640/480/cats/Sorin Lulian 423779/?75403\",\n            \"sponsored_by\": \"Shawn Thompson\",\n            \"tracking_url\": \"http://www.morissette.biz/\",\n            \"created_at\": \"2019-05-22T00:07:55.000000Z\",\n            \"updated_at\": \"2019-05-22T00:07:55.000000Z\"\n        },\n        {\n            \"id\": 527,\n            \"title\": \"Prof.\",\n            \"text\": \"Sequi asperiores nostrum nisi exercitationem. Non ad reiciendis quo voluptates porro. Voluptas neque velit quam voluptatem in.\",\n            \"image\": \"https://lorempixel.com/640/480/cats/Sorin Lulian 348579/?28622\",\n            \"sponsored_by\": \"Mrs. Eugenia Hermiston PhD\",\n            \"tracking_url\": \"https://rogahn.info/vel-officia-aperiam-magni-suscipit-aliquam-dolorem.html\",\n            \"created_at\": \"2019-05-22T00:07:55.000000Z\",\n            \"updated_at\": \"2019-05-22T00:07:55.000000Z\"\n        },\n        {\n            \"id\": 528,\n            \"title\": \"Dr.\",\n            \"text\": \"Nam fugit ipsam a praesentium enim voluptatem quo. Sed ex expedita nihil unde repellat est ex. Ut enim et sunt fugit eum.\",\n            \"image\": \"https://lorempixel.com/640/480/cats/Sorin Lulian 371827/?34448\",\n            \"sponsored_by\": \"Mrs. Sadye Bradtke\",\n            \"tracking_url\": \"http://bernier.com/ea-distinctio-aut-eos-eos-numquam-omnis-fugit\",\n            \"created_at\": \"2019-05-22T00:07:55.000000Z\",\n            \"updated_at\": \"2019-05-22T00:07:55.000000Z\"\n        },\n        {\n            \"id\": 529,\n            \"title\": \"Dr.\",\n            \"text\": \"Praesentium occaecati cumque laborum magni officiis distinctio. Eos assumenda vitae vitae. Expedita expedita officiis ut repellat.\",\n            \"image\": \"https://lorempixel.com/640/480/cats/Sorin Lulian 728197/?17077\",\n            \"sponsored_by\": \"Ivy Bayer\",\n            \"tracking_url\": \"https://murazik.biz/ut-consequatur-sit-et-vitae-aliquam-et-eligendi.html\",\n            \"created_at\": \"2019-05-22T00:07:55.000000Z\",\n            \"updated_at\": \"2019-05-22T00:07:55.000000Z\"\n        },\n        {\n            \"id\": 530,\n            \"title\": \"Prof.\",\n            \"text\": \"Consequatur deserunt modi est blanditiis distinctio magni qui. Repellat facilis laborum nam non quia in. Aut vero et ut itaque aliquid. Suscipit dolor qui culpa ipsam et provident voluptatem.\",\n            \"image\": \"https://lorempixel.com/640/480/cats/Sorin Lulian 697968/?44496\",\n            \"sponsored_by\": \"Emelie Collier\",\n            \"tracking_url\": \"http://www.sanford.com/amet-voluptas-distinctio-mollitia-porro-deleniti\",\n            \"created_at\": \"2019-05-22T00:07:55.000000Z\",\n            \"updated_at\": \"2019-05-22T00:07:55.000000Z\"\n        },\n        {\n            \"id\": 531,\n            \"title\": \"Mr.\",\n            \"text\": \"Consectetur sequi qui reiciendis. Voluptatibus ipsam non vitae asperiores atque repudiandae.\",\n            \"image\": \"https://lorempixel.com/640/480/cats/Sorin Lulian 259034/?66023\",\n            \"sponsored_by\": \"Kaleigh Dickinson\",\n            \"tracking_url\": \"http://www.mann.com/harum-alias-molestias-rerum-dolorem-laboriosam-assumenda-est\",\n            \"created_at\": \"2019-05-22T00:07:55.000000Z\",\n            \"updated_at\": \"2019-05-22T00:07:55.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "advertisement/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/advertisement/:id",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"advertisement",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "advertisement",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "campaign_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "lorem ipsum dolor",
+									"type": "text"
+								},
+								{
+									"key": "text",
+									"value": "long text here",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "https://lorempixel.com/640/480/",
+									"type": "text"
+								},
+								{
+									"key": "sponsored_by",
+									"value": "lorem ipsum",
+									"type": "text"
+								},
+								{
+									"key": "tracking_url",
+									"value": "https://google.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{HOST}}/advertisement",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"advertisement"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "advertisement",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "campaign_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "lorem ipsum dolor",
+											"type": "text"
+										},
+										{
+											"key": "text",
+											"value": "long text here",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"value": "https://lorempixel.com/640/480/",
+											"type": "text"
+										},
+										{
+											"key": "sponsored_by",
+											"value": "lorem ipsum",
+											"type": "text"
+										},
+										{
+											"key": "tracking_url",
+											"value": "https://google.com",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{HOST}}/advertisement",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"advertisement"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.7"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2019 01:17:55 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"code\": 200,\n    \"message\": null,\n    \"data\": {\n        \"id\": 575,\n        \"title\": \"lorem ipsum dolor\",\n        \"text\": \"long text here\",\n        \"image\": \"https://lorempixel.com/640/480/\",\n        \"sponsored_by\": \"lorem ipsum\",\n        \"tracking_url\": \"https://google.com\",\n        \"created_at\": \"2019-05-22T01:17:55.000000Z\",\n        \"updated_at\": \"2019-05-22T01:17:55.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "advertisement/:id",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "campaign_id",
+									"value": "2",
+									"description": "nullable",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "lorem ipsum dolor",
+									"description": "nullable",
+									"type": "text"
+								},
+								{
+									"key": "text",
+									"value": "long text here",
+									"description": "nullable",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "https://lorempixel.com/640/480/",
+									"description": "nullable",
+									"type": "text"
+								},
+								{
+									"key": "sponsored_by",
+									"value": "lorem ipsum",
+									"description": "nullable",
+									"type": "text"
+								},
+								{
+									"key": "tracking_url",
+									"value": "https://google.com",
+									"description": "nullable",
+									"type": "text"
+								},
+								{
+									"key": "asdas",
+									"value": "adsa",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{HOST}}/advertisement/:id",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"advertisement",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "advertisement/:id",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "campaign_id",
+											"value": "2",
+											"description": "nullable",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "title",
+											"value": "lorem ipsum dolor",
+											"description": "nullable",
+											"type": "text"
+										},
+										{
+											"key": "text",
+											"value": "long text here",
+											"description": "nullable",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"value": "https://lorempixel.com/640/480/",
+											"description": "nullable",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "sponsored_by",
+											"value": "lorem ipsum",
+											"description": "nullable",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "tracking_url",
+											"value": "https://google.com",
+											"description": "nullable",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{HOST}}/advertisement/:id",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"advertisement",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.7"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2019 01:43:31 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"code\": 200,\n    \"message\": null,\n    \"data\": {\n        \"id\": 2,\n        \"title\": \"lorem ipsum dolor\",\n        \"text\": \"long text here\",\n        \"image\": \"https://lorempixel.com/640/480/\",\n        \"sponsored_by\": \"lorem ipsum\",\n        \"tracking_url\": \"https://google.com\",\n        \"created_at\": \"2019-05-22T00:07:53.000000Z\",\n        \"updated_at\": \"2019-05-22T01:43:31.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "advertisement/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{HOST}}/advertisement/:id",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"advertisement",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "advertisement/:id Copy",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{HOST}}/advertisement/:id",
+									"host": [
+										"{{HOST}}"
+									],
+									"path": [
+										"advertisement",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.2.7"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 22 May 2019 01:36:14 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"code\": 200,\n    \"message\": null,\n    \"data\": {\n        \"deleted\": true\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

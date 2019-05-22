@@ -18,13 +18,13 @@ class DatabaseSeeder extends Seeder
 
         factory( Advertiser::class, 25 )->create()->each( function ( $advertiser ) {
 
-            $advertiser->campaigns()->saveMany( factory( Campaign::class, rand(1,5) )->make( [
+            $advertiser->campaigns()->saveMany( factory( Campaign::class, rand( 1, 5 ) )->make( [
 
                 'advertiser_id' => $advertiser->id,
 
             ] ) )->each( function ( $campaign ) use ( $advertiser ) {
 
-                $campaign->ads()->saveMany( factory( Advertisement::class, rand(1,15) )->make( [
+                $campaign->ads()->saveMany( factory( Advertisement::class, rand( 1, 15 ) )->make( [
 
                     'advertiser_id' => $advertiser->id,
 
